@@ -40,6 +40,13 @@ main {
   display: flex;
   justify-content: space-between;
   margin: 12px 0;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .button-container button{
+   margin-bottom: 12px;
+  }
 }
 
 .search-input{

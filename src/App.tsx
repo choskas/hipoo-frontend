@@ -1,3 +1,5 @@
+import 'jsoneditor-react/es/editor.min.css';
+import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useState } from "react";
 import "./App.css"; 
 import ThemesTable from "./components/ThemesTable/ThemesTable";
@@ -8,7 +10,6 @@ import { FormDataState, GetAllState } from "./types";
 import { FileAddOutlined } from "@ant-design/icons";
 import CustomDrawer from "./components/CustomDrawer/CustomDrawer";
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const { Title } = Typography;
 const { Search } = Input;
@@ -23,7 +24,7 @@ function App() {
     title: "",
     client: "",
     status: "",
-    colors: "",
+    colors: "{}",
     logo: "",
   });
   const fetchInitApi = async () => {
@@ -43,6 +44,7 @@ function App() {
     setIsOpenDelete(false)
     await fetchInitApi();
   };
+  
   const onPostTheme = async () => {
     if (drawerTitle === 'Crear Tema'){
       const response: any = await createTheme(formData);
@@ -56,6 +58,7 @@ function App() {
 
     await fetchInitApi();
   };
+
   const onSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const search = originalTableData.filter(item => {
       if (item.title.includes(e.target.value)){
