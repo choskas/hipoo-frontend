@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import { Button, Drawer, Form, Input, Modal, Select } from "antd";
-import TextArea from "antd/es/input/TextArea";
+import { Button, Drawer, Input, Modal, Select } from "antd";
 import { useState } from "react";
 import { DrawerContent, UploadInput } from "./CustomDrawer.styled";
 import { CustomDrawerProps, IsErrorForm } from "./types";
@@ -40,7 +39,7 @@ const CustomDrawer = ({
       };
     }
   };
-  console.log(formData, "asasasadsad");
+
   const onError = () => {
     const errorObject = {
       title: false,
@@ -72,12 +71,7 @@ const CustomDrawer = ({
         errorObject.logo = true;
         break;
     }
-    console.log(
-      errorObject,
-      Object.values(errorObject).includes(true),
-      formData,
-      "<<<<<<<"
-    );
+
     return Object.values(errorObject).includes(true);
   };
 
@@ -110,7 +104,7 @@ const CustomDrawer = ({
       setPreview(null);
     }
   }, [title, isOpen]);
-  console.log(formData, "asas");
+
   return (
     <Drawer
       title={title}

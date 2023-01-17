@@ -61,7 +61,7 @@ function App() {
 
   const onSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const search = originalTableData.filter(item => {
-      if (item.title.includes(e.target.value)){
+      if (item.title.toLowerCase().includes(e.target.value) || item.client.toLowerCase().includes(e.target.value)){
         return item
       }
     })

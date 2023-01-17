@@ -4,7 +4,6 @@ import type { ColumnsType } from "antd/es/table";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 import { OptionsContainer } from "./ThemesTable.styles";
 import { GetAllState } from "../../types";
-import CustomDrawer from "../CustomDrawer/CustomDrawer";
 
 const ThemesTable = ({
   tableData,
@@ -36,13 +35,14 @@ const ThemesTable = ({
       title: "Estatús",
       dataIndex: "status",
       key: "status",
+      sorter: (a: any, b: any) => a.status.length - b.status.length,
       render: (value: string) => {
         let status = "success";
-        switch (status) {
+        switch (value) {
           case "BORRADOR":
             status = "warning";
             break;
-          case "ELIMINADO":
+          case "BORRADO":
             status = "error";
             break;
           case "PUBLICADO":

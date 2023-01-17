@@ -1,46 +1,28 @@
-# Getting Started with Create React App
+# Consultor de temas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Consultor de temas prueba técnica porfavor seguir las instrucciones a continuación para que pueda levantar el proyecto sin ningun problema
 
-## Available Scripts
+### Instalación de dependecias (IMPORTANTE)
 
-In the project directory, you can run:
+Porfavor instale las dependencias con el comando:
+```sh
+npm install 
+```
 
-### `npm start`
+Acto seguido puede empezar el proyecto con: 
+```sh
+npm start
+```
+Favor de esperar un momento o recargar si la tabla se ve vacia, esto es debido a que el API tarda en responder ya que fue lanzada 
+en una capa gratuita de Render, el proyecto del back esta en el otro rar.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Herramientas usadas
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Por cuestiones de tiempo el proyecto fue construido bajo CRA, añadiendole el template de typescript
 
-### `npm test`
+Las demas herramientas que se usaron fueron las siguientes:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+* React
+* Typescript
+* Librerias UI (Ant Design y styled components)
+* Axios

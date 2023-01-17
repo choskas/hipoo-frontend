@@ -6,7 +6,6 @@ import { urls } from "./urls";
 export const getAllThemes: () => Promise<GetAllReponse[] | unknown> = async () => {
     try {
         const response: GetAllReponse[] = (await axios.get(urls.getAll)).data.data;
-        console.log(response)
         return response
     } catch (error) {
     return error
