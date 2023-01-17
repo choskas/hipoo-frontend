@@ -16,6 +16,9 @@ npm start
 Favor de esperar un momento o recargar si la tabla se ve vacia, esto es debido a que el API tarda en responder ya que fue lanzada 
 en una capa gratuita de Render, el proyecto del back esta en el otro rar.
 
+### Proyecto en vivo
+Puedes ver el proyecto lanzado en este link: https://ornate-jalebi-ec7e52.netlify.app 
+
 ### Herramientas usadas
 
 Por cuestiones de tiempo el proyecto fue construido bajo CRA, añadiendole el template de typescript
